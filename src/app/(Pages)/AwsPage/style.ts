@@ -6,7 +6,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 `
-
 export const TitleBox = styled.div`
     height: 250px;
     width: 100%;
@@ -99,7 +98,6 @@ export const SubTitleBox = styled.div`
         }
     }
 `
-
 export const InfosBox = styled.div` 
     min-height: 500px;
     width: 100%;
@@ -110,69 +108,147 @@ export const InfosBox = styled.div`
     }
 
     .bigBox{
+        height: 450px;
+        width: 100%;
         display: flex;
-        padding: 20px;
-        div{
-            flex: 1;
-        }
+
+
         .leftSide{
-            font-size: 17px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .infos{
+                height: 400px;
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px;
+                span{
+                    font-weight: bolder;
+                    margin-right: 10px;
+                    font-size: 17px;
+                }
+            }
+        }   
+        .rightSide{
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            
-            span{
-                font-weight: bolder;
-                font-size: 20px;
-            }
-        }
-
-        .rightSide{
+            align-items: center;
+            gap: 10px;
             p{
-                font-size: 23px;
-               
-            }
-            span{
-                font-weight: bolder;
-                font-style: italic;
+                font-size: 18px;
             }
             .img{
-                background-image: url(https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png);
                 height: 300px;
                 width: 300px;
-                margin: 10px auto;
-
+                background-image: url(https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png);
             }
         }
     }
+
 `
-
-
-export const SimulatesBox = styled.div` 
-    border: 3px solid gray;
-    min-height: 300px;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px lightgray;
-    width: 400px;
+export const contentBanner = styled.div`
+    height: 500px;
+    width: 100%;
+    background-color: #232F3F;
+    color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 15px;
+    gap: 80px;
 
-    a{
-        color: black;
-        font-size: 20px;
-        &:hover{
-            color: yellow;
-            text-shadow: 2px 2px 2px black;
+    h2{
+        font-size: 35px;
+        border-bottom: 2px solid orange;
+        padding: 5px;
+    }
+
+    .infos{
+        display: flex;
+        gap: 50px;
+    }
+
+    .resume{
+        border: 1px solid white;
+        height: 250px;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;     
+        h3{      
+            font-size: 24px;
+            color: orange;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+        }
+
+        button{
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            border: none;
+            background-color: orange;
+
+            &:hover{
+                background-color: rgb(255, 196, 87);
+                color: white;
+            }
         }
     }
 
-    div{
-        border: 1px solid black;
-        padding: 10px 40px;
-        border-radius: 20px;
-    }
+
 `
+
+export const SimulatesBox = styled.div` 
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .linkBox{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+
+
+    h2{
+        color: darkblue;
+        border-bottom: 3px solid orange;
+        font-size: 35px;
+        margin: 30px;
+        padding-bottom: 5px;
+    }
+
+    a{
+        border: 2px solid orange;
+        padding: 20px 40px;
+        color: black;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px lightgray;
+
+        &:hover{
+            color: gray;
+            font-style: underline;
+            border: 2px solid rgb(255, 196, 87);
+        }
+    }
+
+  
+`
+
+//background-image: url(https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png);
