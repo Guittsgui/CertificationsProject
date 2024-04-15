@@ -226,7 +226,7 @@ export const SimulatesBox = styled.div`
 
 
     h2{
-        color: darkblue;
+        color: rgb(19, 19, 83);
         border-bottom: 3px solid orange;
         font-size: 35px;
         margin: 30px;

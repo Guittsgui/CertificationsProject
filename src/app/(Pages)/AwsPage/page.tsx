@@ -69,7 +69,7 @@ const AwsPage = () => {
                 <h2> Simulados + 300 Questões: </h2>
                 <div className="linkBox">
                     {allSimulates.map((item,index) => (
-                        <Link href="/" key="index"> Simulado 0{index + 1}: </Link>
+                        <Link href={`/simulates/aws/${index}`} key="index"> Simulado 0{index + 1} </Link>
                     ))}
                 </div>
             </s.SimulatesBox>
