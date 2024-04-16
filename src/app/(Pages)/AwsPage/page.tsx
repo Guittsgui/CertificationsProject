@@ -51,7 +51,7 @@ const AwsPage = () => {
                 </div>
             </s.InfosBox>
             <s.contentBanner id="study">
-                <h2> Seu guia de Estudo Completo: </h2>
+                <h2> Seu guia de Estudos Completo: </h2>
                 <div className="infos">
                     <div className="resume">
                         <h3>Material Completo:</h3>

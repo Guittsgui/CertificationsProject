@@ -48,81 +48,143 @@ export const initialContainer = styled.div<props>`
 `
 
 export const questionsContainer = styled.div<props>`
-    width: 650px;
+    width: 800px;
     min-height: 600px;
     display: ${(props) => props.hasStarted === true ? "flex" : "none"};
     align-items: center;
-
-    flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 2px 2px 2px gray;
 `
 
-export const questionTitle = styled.header`
-    height: 100px;
+export const questionsFields = styled.div`
+    flex: 3;
+    min-height: 600px;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-right: 3px solid black;
+
+`
+
+export const title = styled.header`
+    width: 100%;
+    border-bottom: 1px solid black;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-    p{
-        border-bottom: 3px solid orange;
+    h2{
+        border-bottom: 2px solid orange;
+        padding-bottom: 2px;
+        color: darkblue;
     }
 `
 
-export const questionFooter = styled.div`
+export const question = styled.div`
+    padding: 20px;
+    min-height: 360px;
+    span{
+        font-weight: bolder;
+        margin-right: 20px;
+        font-style: italic;
+    }
+
+    p{
+        margin-bottom: 25px;
+    }
+`
+
+export const footer = styled.footer`
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: center;
-    height: 100px;
-    gap: 50px;
+    gap: 40px;
+    background-color: #232F3F;
 
     button{
-        background-color: orange;
-        border: none;
-        border-radius: 20px;
-        width: 200px;
+        width: 150px;
         height: 40px;
+        border-radius: 20px;
         border: 1px solid black;
-        font-size: 18px;
+        background-color: orange;
         &:hover{
             opacity: 70%;
         }
+        
         &:disabled{
-            background-color: darkgray;
+            background-color: gray;
             cursor: not-allowed;
             opacity: 100%;
         }
 
     }
-`
-export const question = styled.div`
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid black;
-    span{
-        font-size: 20px;
-        font-weight: bolder;
-        font-style: italic;
-        margin-right: 15px;
+
+    .finnaly{
+        background-color: bisque;
     }
 `
 
-export const answers = styled.div`
-    padding: 20px;
+export const rightAnswerr = styled.div` 
+    height: 50px ;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: green;
+    p{
+        border-bottom: 2px solid green;
+        padding: 5px;
+    }
 `
 
-export const questionBody = styled.div`
-    min-height: 400px;
-    border-bottom: 2px solid black;
-    width: 100%;
+
+
+
+export const menuFields = styled.nav`
+    flex: 1;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        margin: 10px 0;
+        border-bottom: 2px solid orange;
+        color: darkblue;
+    }
+
+    .allQuestionsBox{
+        width: 180px;
+        min-height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+
+        .singleQuestionCircle{
+            height: 35px;
+            width: 35px;
+            border: 2px solid orange;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover{
+                opacity: 70%;
+                font-weight: bolder;
+
+                p{
+                    border-bottom: 1px solid black;
+                }
+            }
+            
+        }
+    }
 `
 
 
