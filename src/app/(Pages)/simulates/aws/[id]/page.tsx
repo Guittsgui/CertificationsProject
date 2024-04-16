@@ -53,7 +53,13 @@ const MainPage = ({params}: any) => {
                         
                    </s.footer>
                    <s.rightAnswerr>
-                        {showAnswer && <p> Resposta Correta: A, B.</p> }
+                        {showAnswer && 
+
+                           <p> {simulate[currentQuestion].rightAnswers.toString()}</p>
+                        
+                        
+                        }
+                       
                    </s.rightAnswerr>
 
 
